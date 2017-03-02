@@ -6,3 +6,4 @@ app/*.dat
 *~
 
 data/yelp_dataset_challenge_round9*
+data/*.json
