@@ -1,4 +1,8 @@
 .DS_Store
 *.swp
 
+app/*.dat
+*.pyc
+*~
+
 data/yelp_dataset_challenge_round9*
