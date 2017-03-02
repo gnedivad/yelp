@@ -1,0 +1,25 @@
+{% extends "app_base.html" %}
+{% block content %}
+{% if error is defined %}
+        <div class="alert alert-warning" role="alert">{{ error }}</div>
+{% endif %}
+<h3>Item Information</h3>
+{% if result is defined %}
+    <table class="table table-striped">
+    {% for key in result %}
+           <!--<div>
+	     <span>{{ key|e }}</span>
+	     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	     <span>{{ result[key]|e }}</span>
+	   </div>-->
+	   <tr>
+	     <td>{{ key }}</td><td>{{ result[key] }}</td>
+	   </tr>
+    {% endfor %}
+    <tr><td>Categories</td><td>{{ categories }}</td></tr>
+    </table>
+{% else %}
+<div>No Item Exists!</div>
+{% endif %}
+
+{% endblock %}

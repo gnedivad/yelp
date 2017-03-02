@@ -1,0 +1,95 @@
+{% extends "app_base.html" %}
+{% block content %}
+<h3> Search </h3> 
+
+<form method="POST" action="search" role="form" style="max-width:400px; width:100%">
+	{% if message is defined %}
+	<div class="alert alert-warning" role="alert">{{ message }}</div>
+	{% endif %}
+	<div class="alert alert-info">Anything not input will not be taken into account</div>
+	<div class="form-group">
+	  <label for="restaurant">Restaurant ID</label>
+	  <input type="text" class="form-control" id="restaurantId" name="restaurantId" />
+	</div>
+	<div class="form-group">
+	  <label for="name">Restaurant Name</label>
+	  <input type="text" name="name" class="form-control" id="name" />
+	</div>
+	{% if categories is defined %}
+	<div class="form-group">
+	  <label for="category">Category</label>
+	  <select name="category">
+	    {% for c in categories %}
+	    <option value = "{{ c.Category }}">{{ c.Category }}</option>
+	    {% endfor %}
+	  </select>
+	</div>
+	{% endif %}
+	<!--<div class="form-group">
+	  <label for="category">Category</label>
+	  <input type="text" name="category" class="form-control" id="category" />
+	</div>-->
+	<div class="form-group">
+	  <label for="minPrice">Min Price</label>
+	  <input type="text" name="minPrice" class="form-control" id="minPrice" />
+	</div>
+	<div class="form-group">
+	  <label for="maxPrice">Max Price</label>
+	  <input type="text" name="maxPrice" class="form-control" id="maxPrice" />
+	</div>
+	<div class="form-group">
+	  <label for="city">City</label>
+	  <input type="text" name="city" class="form-control" id="city" />
+	</div>
+	<div class="form-group">
+	  <label for="lat">Latitude</label>
+	  <input type="text" name="lat" class="form-control" id="lat" />
+	</div>
+	<div class="form-group">
+	  <label for="long">Longitude</label>
+	  <input type="text" name="long" class="form-control" id="long" />
+	</div>
+	<div class="form-group">
+	  <label for="distance">Radius (Miles)</label>
+	  <input type="text" name="distance" class="form-control" id="distance" />
+	</div>
+	<div class="form-group">
+		<label for="minStars">Minimum Stars</label>
+		<div class="radio-inline"><label><input type="radio" name="minStars" value="1" checked>1</label></div>
+		<div class="radio-inline"><label><input type="radio" name="minStars" value="2">2</label></div>
+		<div class="radio-inline"><label><input type="radio" name="minStars" value="3">3</label></div>
+		<div class="radio-inline"><label><input type="radio" name="minStars" value="4">4</label></div>
+		<div class="radio-inline"><label><input type="radio" name="minStars" value="5">5</label></div>
+	</div>
+	<div class="form-group">
+	  <label for="numResults">Max # Results</label>
+	  <input type="text" name="numResults" class="form-control" id="numResults" />
+	</div>
+	<div><input type="submit" value="Start Searching!" class="btn btn-primary" /></div>
+</form>
+<h3>Result</h3>
+
+{% if search_result %}
+<table class="table table-striped">
+<tr>
+  <td>Name</td>
+  <td>Price (Num $)</td>
+  <td>City</td>
+  <td>Rating</td>
+</tr>
+{% for result in search_result %}
+<tr>
+  <td><a href="./view?restaurantId={{ result['RestaurantID'] }}">{{ result.Name }}</a></td>
+  <td>{{ result.Price }}</td>
+  <td>{{ result.City }}</td>
+  <td>{{ result.Rating }}</td>
+</tr>
+{% endfor %}
+</table>
+{% else %}
+<ul>
+<div>No results</div></ul>
+{% endif %}
+
+
+{% endblock %}
