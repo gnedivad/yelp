@@ -1,0 +1,1496 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.CS270FinalProject.org/RestaurantOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.CS270FinalProject.org/RestaurantOntology"
+     versionIRI="http://www.CS270FinalProject.org/RestaurantOntology/1.0.0">
+    <Prefix name="" IRI="http://www.CS270FinalProject.org/RestaurantOntology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#IndianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UzbekRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DinersRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BurgersRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CatalanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SteakhousesRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HasShellfishAllergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModernEuropeanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HungarianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WrapsRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CambodianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaiwaneseRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BritishRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MongolianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegetarian"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRecommendation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HimalayanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MiddleEasternRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JapaneseRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PeruvianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#restaurantName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CafeteriaRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Halal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoupRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PriceyPriceRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SandwichesRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WafflesRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FishAndChipsRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreekRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OvoLactoVegetarian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpanishRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestaurantByFoodType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TraditionalAmericanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArmenianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HasSoyAllergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoodlesRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PakistaniRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlutenFree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NewMexicanCuisineRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FilipinoRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FishForbidden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiveFoodRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NicaraguanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HasAllergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PopUpRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HasPeanutAllergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IranianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MaximumDistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SlovakianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SouthernRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DistancePreference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestaurantByPrice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OvoVegetarian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Review"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#username"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NewAmericanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BarbequeRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GermanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SingaporeanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapasRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SushiBarsRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoodCourtRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LactoVegetarian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pescetarian"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MinimumDistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BurmeseRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ItalianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KosherRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VietnameseRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AustrianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IrishRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MaximumPrice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrazilianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HonduranRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CzechRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArabianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#RestaurantData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HongKongStyleCafeRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PizzaRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NepaleseRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupperClubsRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HasWheatAllergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuffetsRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreoleRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MinimumPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#category"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HasMilkAllergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PortugueseRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KoreanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlcoholForbidden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LatinAmericanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScandinavianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BelgianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FastFoodRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChickenWingsRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#address"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrasseriesRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeatForbidden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PanAsianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DelisRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kosher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PorkForbidden"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HasForbiddenFoods"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThaiRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GuamanianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HalalRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#writtenBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArgentineRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KebabRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GastropubsRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModeratePriceRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HawaiianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaribbeanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BreakfastAndBrunchRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AfricanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoulFoodRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#UserPreference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IberianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ReviewData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotDogsRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VegetarianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChineseRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#writtenFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MalaysianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TexMexRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CuisinePreference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChickenShopRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recommendedFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserPreference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestaurantByCuisine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UkrainianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HasFishAllergy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TasteAversion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FondueRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrenchRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreperiesRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SyrianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediterraneanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoroccanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndonesianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeafoodRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HasEggAllergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AfghanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoultryForbidden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InexpensivePriceRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SriLankanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExpensivePriceRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaotianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlutenFreeRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AsianFusionRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoutineriesRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BeefForbidden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RussianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotPotRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CajunRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PricePreference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CafesRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CubanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RawFoodRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BasqueRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MexicanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AustralianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeganRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EggsForbidden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SaladRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoodStandsRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DinnerTheaterRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TurkishRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#UserData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComfortFoodRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScottishRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolishRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheesesteaksRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EthiopianRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecialInterestRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BangladeshiRestaurant"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#CajunRestaurant"/>
+        <Class IRI="#CreoleRestaurant"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FishForbidden"/>
+        <ObjectComplementOf>
+            <Class IRI="#Pescetarian"/>
+        </ObjectComplementOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HimalayanRestaurant"/>
+        <Class IRI="#NepaleseRestaurant"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#IranianRestaurant"/>
+        <Class IRI="#PersianRestaurant"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AfghanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AfricanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AlcoholForbidden"/>
+        <Class IRI="#HasForbiddenFoods"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArabianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArgentineRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArmenianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AsianFusionRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AustralianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AustrianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BangladeshiRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BarbequeRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BasqueRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BeefForbidden"/>
+        <Class IRI="#HasForbiddenFoods"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BelgianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrasseriesRestaurant"/>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrazilianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreakfastAndBrunchRestaurant"/>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BritishRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuffetsRestaurant"/>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BurgersRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BurmeseRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CafesRestaurant"/>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CafeteriaRestaurant"/>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CajunRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CambodianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaribbeanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CatalanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheesesteaksRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChickenShopRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChickenWingsRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChineseRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComfortFoodRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreoleRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreperiesRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CubanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CzechRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DelisRestaurant"/>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DinersRestaurant"/>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DinnerTheaterRestaurant"/>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EggsForbidden"/>
+        <Class IRI="#HasForbiddenFoods"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthiopianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExpensivePriceRestaurant"/>
+        <Class IRI="#RestaurantByPrice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FastFoodRestaurant"/>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FilipinoRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FishAndChipsRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FishForbidden"/>
+        <Class IRI="#HasForbiddenFoods"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FondueRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodCourtRestaurant"/>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodStandsRestaurant"/>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrenchRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GastropubsRestaurant"/>
+        <Class IRI="#SpecialInterestRestaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GermanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlutenFree"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlutenFreeRestaurant"/>
+        <Class IRI="#SpecialInterestRestaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreekRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuamanianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Halal"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HalalRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HasForbiddenFoods"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HawaiianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HimalayanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HonduranRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HongKongStyleCafeRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotDogsRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotPotRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HungarianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IberianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndonesianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InexpensivePriceRestaurant"/>
+        <Class IRI="#RestaurantByPrice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IranianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IrishRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ItalianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JapaneseRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KebabRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KoreanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kosher"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KosherRestaurant"/>
+        <Class IRI="#SpecialInterestRestaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LactoVegetarian"/>
+        <Class IRI="#Vegetarian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaotianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LatinAmericanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiveFoodRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MalaysianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeatForbidden"/>
+        <Class IRI="#HasForbiddenFoods"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediterraneanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MexicanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MiddleEasternRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModeratePriceRestaurant"/>
+        <Class IRI="#RestaurantByPrice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModernEuropeanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MongolianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoroccanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NepaleseRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewAmericanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewMexicanCuisineRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NicaraguanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoodlesRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvoLactoVegetarian"/>
+        <Class IRI="#Vegetarian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvoVegetarian"/>
+        <Class IRI="#Vegetarian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PakistaniRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PanAsianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeruvianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pescetarian"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pescetarian"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#BeefForbidden"/>
+            <Class IRI="#MeatForbidden"/>
+            <Class IRI="#PorkForbidden"/>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PizzaRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolishRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PopUpRestaurant"/>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PorkForbidden"/>
+        <Class IRI="#HasForbiddenFoods"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PortugueseRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoultryForbidden"/>
+        <Class IRI="#HasForbiddenFoods"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoutineriesRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PriceyPriceRestaurant"/>
+        <Class IRI="#RestaurantByPrice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RawFoodRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurant"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#address"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#category"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#price"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#rating"/>
+                <Datatype abbreviatedIRI="xsd:float"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#restaurantName"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMany"/>
+            <Class IRI="#Review"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#recommendedFor"/>
+            <Class IRI="#User"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestaurantByCuisine"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestaurantByFoodType"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestaurantByPrice"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestaurantByServingStyle"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Review"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#writtenBy"/>
+            <Class IRI="#User"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Review"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#writtenFor"/>
+            <Class IRI="#Restaurant"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Review"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#data"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Review"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RussianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SaladRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SandwichesRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScandinavianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScottishRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeafoodRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SingaporeanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlovakianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoulFoodRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoupRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SouthernRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpanishRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecialInterestRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SriLankanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SteakhousesRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupperClubsRestaurant"/>
+        <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SushiBarsRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SyrianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaiwaneseRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapasRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TexMexRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThaiRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TraditionalAmericanRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TurkishRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UkrainianRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPreference"/>
+            <Class IRI="#UserPreference"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecommendation"/>
+            <Class IRI="#Restaurant"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#age"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#username"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserPreference"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#HasEggAllergy"/>
+                <Datatype abbreviatedIRI="xsd:boolean"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#HasFishAllergy"/>
+                <Datatype abbreviatedIRI="xsd:boolean"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#HasMilkAllergy"/>
+                <Datatype abbreviatedIRI="xsd:boolean"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#HasPeanutAllergy"/>
+                <Datatype abbreviatedIRI="xsd:boolean"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#HasShellfishAllergy"/>
+                <Datatype abbreviatedIRI="xsd:boolean"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#HasSoyAllergy"/>
+                <Datatype abbreviatedIRI="xsd:boolean"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#HasWheatAllergy"/>
+                <Datatype abbreviatedIRI="xsd:boolean"/>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserPreference"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#MaximumDistance"/>
+                <Datatype abbreviatedIRI="xsd:float"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#MinimumDistance"/>
+                <Datatype abbreviatedIRI="xsd:float"/>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserPreference"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#PricePreference"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Expensive</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Inexpensive</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Moderate</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pricey</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UzbekRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegan"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeganRestaurant"/>
+        <Class IRI="#SpecialInterestRestaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegetarian"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegetarian"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#BeefForbidden"/>
+            <Class IRI="#MeatForbidden"/>
+            <Class IRI="#PorkForbidden"/>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VegetarianRestaurant"/>
+        <Class IRI="#SpecialInterestRestaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VietnameseRestaurant"/>
+        <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WafflesRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WrapsRestaurant"/>
+        <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ExpensivePriceRestaurant"/>
+        <Class IRI="#InexpensivePriceRestaurant"/>
+        <Class IRI="#ModeratePriceRestaurant"/>
+        <Class IRI="#PriceyPriceRestaurant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LactoVegetarian"/>
+        <Class IRI="#OvoLactoVegetarian"/>
+        <Class IRI="#OvoVegetarian"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pescetarian"/>
+        <Class IRI="#Vegan"/>
+        <Class IRI="#Vegetarian"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRecommendation"/>
+        <ObjectProperty IRI="#recommendedFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#writtenBy"/>
+        <ObjectProperty IRI="#writtenFor"/>
+    </InverseObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CuisinePreference"/>
+        <DataProperty IRI="#UserPreference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DistancePreference"/>
+        <DataProperty IRI="#UserPreference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#HasAllergy"/>
+        <DataProperty IRI="#UserPreference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#HasEggAllergy"/>
+        <DataProperty IRI="#HasAllergy"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#HasFishAllergy"/>
+        <DataProperty IRI="#HasAllergy"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#HasMilkAllergy"/>
+        <DataProperty IRI="#HasAllergy"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#HasPeanutAllergy"/>
+        <DataProperty IRI="#HasAllergy"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#HasShellfishAllergy"/>
+        <DataProperty IRI="#HasAllergy"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#HasSoyAllergy"/>
+        <DataProperty IRI="#HasAllergy"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#HasWheatAllergy"/>
+        <DataProperty IRI="#HasAllergy"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MaximumDistance"/>
+        <DataProperty IRI="#DistancePreference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MaximumPrice"/>
+        <DataProperty IRI="#PricePreference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MinimumDistance"/>
+        <DataProperty IRI="#DistancePreference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MinimumPrice"/>
+        <DataProperty IRI="#PricePreference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PricePreference"/>
+        <DataProperty IRI="#UserPreference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TasteAversion"/>
+        <DataProperty IRI="#UserPreference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#UserPreference"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#address"/>
+        <DataProperty IRI="#RestaurantData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#age"/>
+        <DataProperty IRI="#UserData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#category"/>
+        <DataProperty IRI="#RestaurantData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#data"/>
+        <DataProperty IRI="#ReviewData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#description"/>
+        <DataProperty IRI="#ReviewData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#price"/>
+        <DataProperty IRI="#RestaurantData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#rating"/>
+        <DataProperty IRI="#RestaurantData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#restaurantName"/>
+        <DataProperty IRI="#RestaurantData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#username"/>
+        <DataProperty IRI="#UserData"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
