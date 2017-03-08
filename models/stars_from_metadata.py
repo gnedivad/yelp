@@ -4,8 +4,9 @@ import numpy as np
 import operator
 import sys
 from collections import defaultdict
-from sklearn.neighbors import NearestNeighbors
+from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
+from sklearn.neighbors import NearestNeighbors
 
 
 def count_restaurants(restaurants):
@@ -56,7 +57,14 @@ def count_restaurants(restaurants):
 def vectorize_restaurants(restaurants, info):
   """
   Vectorizes restaurants with the following column ordering:
-  category city name price stars
+  - X = category | city | name | price; categories, cities, and names ordered
+    by number of occurences while price ordered from lower prices to higher
+    prices.
+  - y = stars; ordered from lower stars to higher stars.
+
+  Also returns:
+  - restaurant_id_to_row_index: pretty self-explanatory; a dict mapping
+    restaurant ids to the row indices in X and y.
   """
   categories, cities, names, prices, stars = info
   category_to_col, city_to_col, name_to_col, price_to_col, star_to_col = \
@@ -135,6 +143,9 @@ def group_reviews_by_user(reviews):
 def random_guessing(X, y, rest_id_to_row_index, user_to_reviews):
   """
   Yields a average loss of around 1.11 buckets (0.555 stars).
+
+  A uniform distribution of stars across all buckets yields a average loss of
+  around 240/81 = 2.96 buckets (1.481 stars).
   """
   losses = []
   running_sum = 0
@@ -221,10 +232,9 @@ def k_nearest_neighbor(X, y, rest_id_to_row_index, user_to_reviews):
     distances, indices = nbrs.kneighbors(X_sub)
 
     # For each review, determines the number of stars-buckets between the
-    # review and its nearest neighbor. For example, if a review had 2.5
-    # stars and its nearest neighbor had 3.5 stars, then this would another
-    # 2 to the loss (since the 3.5 bucket is 2 buckets away from the 2.5
-    # bucket).
+    # review and its nearest neighbor. For example, if a review had 2.5 stars
+    # and its nearest neighbor had 3.5 stars, then this would contribute 2 to
+    # the loss (since the 3.5 bucket is 2 buckets away from the 2.5 bucket).
     A = np.where(y_sub[indices] == 1)[2]
     loss = np.mean(np.abs(A[::2] - A[1::2]))
     # np.mean(np.square(A[::2] - A[1::2]))
@@ -233,18 +243,31 @@ def k_nearest_neighbor(X, y, rest_id_to_row_index, user_to_reviews):
     running_count += 1
 
 
+def softmax_regression(X, y, rest_id_to_row_index):  #, user_to_reviews):
+  """
+  Yields an average loss of around 1.05 buckets (0.526 stars) using just
+  business data (no user reviews data).
+  """
+  y = np.where(y == 1)[1]
+  X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.3, random_state=42)
+  classifier = LogisticRegression()  # softmax classifier
+  classifier.fit(X_train, y_train)
+  predictions = classifier.predict(X_test)
+  loss = np.mean(np.abs(predictions - y_test))
+  return loss
+
+
 def main():
   with open("data/restaurants.json", "rb") as f:
     restaurants = json.load(f)
   info = count_restaurants(restaurants)
   X, y, rest_id_to_row_index = vectorize_restaurants(restaurants, info)
 
+  """
   with open("data/reviews_stars.json", "rb") as f:
     reviews = json.load(f)
   user_to_reviews = group_reviews_by_user(reviews)
-
-  # X_train, X_test, y_train, y_test = train_test_split(
-  #   X, y, test_size=0.3, random_state=42)
 
   knn_loss = k_nearest_neighbor(X, y, rest_id_to_row_index, user_to_reviews)
   print "knn_loss:", knn_loss
@@ -252,6 +275,12 @@ def main():
   print "-" * 60
   rand_loss = random_guessing(X, y, rest_id_to_row_index, user_to_reviews)
   print "rand_loss:", rand_loss
+  """
+
+  print "-" * 60
+  softmax_loss = softmax_regression(X, y, rest_id_to_row_index)
+  print "softmax_loss:", softmax_loss
+
 
 if __name__=="__main__":
   main()
