@@ -12,13 +12,14 @@
 	  <input type="text" class="form-control" id="restaurantId" name="restaurantId" />
 	</div>
 	<div class="form-group">
-	  <label for="name">Restaurant Name</label>
+	  <label for="name">Restaurant Name (Exact Match)</label>
 	  <input type="text" name="name" class="form-control" id="name" />
 	</div>
 	{% if categories is defined %}
 	<div class="form-group">
 	  <label for="category">Category</label>
 	  <select name="category">
+	    <option value=""></option>
 	    {% for c in categories %}
 	    <option value = "{{ c.Category }}">{{ c.Category }}</option>
 	    {% endfor %}
@@ -31,11 +32,23 @@
 	</div>-->
 	<div class="form-group">
 	  <label for="minPrice">Min Price</label>
-	  <input type="text" name="minPrice" class="form-control" id="minPrice" />
+	  <select name="minPrice">
+	    <option value = "1" selected="selected">$</option>
+	    <option value = "2">$$</option>
+	    <option value = "3">$$$</option>
+	    <option value = "4">$$$$</option>
+	  </select>
+	  <!--<input type="text" name="minPrice" class="form-control" id="minPrice" />-->
 	</div>
 	<div class="form-group">
 	  <label for="maxPrice">Max Price</label>
-	  <input type="text" name="maxPrice" class="form-control" id="maxPrice" />
+	  <select name="maxPrice">
+	    <option value = "1">$</option>
+	    <option value = "2">$$</option>
+	    <option value = "3">$$$</option>
+	    <option value = "4" selected="selected">$$$$</option>
+	  </select>
+	  <!--<input type="text" name="maxPrice" class="form-control" id="maxPrice" />-->
 	</div>
 	<div class="form-group">
 	  <label for="city">City</label>
@@ -80,7 +93,17 @@
 {% for result in search_result %}
 <tr>
   <td><a href="./view?restaurantId={{ result['RestaurantID'] }}">{{ result.Name }}</a></td>
-  <td>{{ result.Price }}</td>
+  <td>{% if result.Price == 1 %}
+    $
+    {% elif result.Price == 2 %}
+    $$
+    {% elif result.Price == 3 %}
+    $$$
+    {% elif result.Price == 4 %}
+    $$$$
+    {% else %}
+    None
+    {% endif %}</td>
   <td>{{ result.City }}</td>
   <td>{{ result.Rating }}</td>
 </tr>

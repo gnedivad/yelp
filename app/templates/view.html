@@ -13,11 +13,46 @@
 	     <span>{{ result[key]|e }}</span>
 	   </div>-->
 	   <tr>
-	     <td>{{ key }}</td><td>{{ result[key] }}</td>
+	     <td>{{ key }}</td>
+	     <td>
+	       {% if key == 'Price'  %}
+	       {% if result.Price == 1 %}
+	       $
+	       {% elif result.Price == 2 %}
+	       $$
+	       {% elif result.Price == 3 %}
+	       $$$
+	       {% elif result.Price == 4 %}
+	       $$$$
+	       {% else %}
+	       None
+	       {% endif %}
+	       {% else %}
+	       {{ result[key] }}
+	       {% endif %}
+	     </td>
 	   </tr>
     {% endfor %}
     <tr><td>Categories</td><td>{{ categories }}</td></tr>
     </table>
+
+    {% if reviews is defined  %}   
+    <table class="table table-striped">
+      <tr>
+	<td>Stars</td>
+	<td>Review</td>
+      </tr>
+      {% for review in reviews %}
+      <tr>
+	<td>{{ review.Rating }}</td>
+	<td>{{ review.Text }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <div>No reviews for this item in the database!</div>
+    {% endif %}
+
 {% else %}
 <div>No Item Exists!</div>
 {% endif %}

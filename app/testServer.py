@@ -65,6 +65,8 @@ class view:
                 for c in categories:
                     categories_string += c.Category
                     categories_string += '; '
+            reviewsResult = sqlitedb.getReviewsByRestaurant(restaurantId)
+            #print reviewsResult
         except Exception as e:
             t.rollback()
             error = str(e)
@@ -76,8 +78,12 @@ class view:
                 #return json.dumps({'status': 0, 'message': 'no results'})
                 return render_template('view.html')
             #return json.dumps({'status': 0, 'results': list(result)})
-            return render_template('view.html', result = result,categories = categories_string)
-    
+            if reviewsResult is None:
+                return render_template('view.html', result = result,categories = categories_string)
+            else:
+                return render_template('view.html', result = result,categories = categories_string,reviews=reviewsResult)
+                
+            
 class search:
     def GET(self):
         categories = sqlitedb.getAllCategories()

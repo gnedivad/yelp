@@ -1,6 +1,6 @@
 import web
 
-db = web.database(dbn='sqlite', db='Restaurants.db')
+db = web.database(dbn='sqlite', db='RestaurantsOld.db')
 
 # Enforce foreign key constraints
 # WARNING: DO NOT REMOVE THIS!
@@ -15,6 +15,14 @@ def transaction():
 # check out http://webpy.org/cookbook/query for more info
 def query(query_string, vars = {}):
     return list(db.query(query_string, vars))
+
+def getReviewsByRestaurant(restaurantId):
+    query_str = 'select * from Reviews where RestaurantID = $restaurantId'
+    result = query(query_str, {'restaurantId': restaurantId})
+    if result:
+        return result
+    else:
+        return
 
 def getRestaurantById(restaurantId):
     # TODO: rewrite this method to catch the Exception in case `result' is empty

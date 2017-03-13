@@ -4,3 +4,5 @@
 update Restaurants set Price = null where Price = 'None';
 
 .import categories.dat Categories
+
+.import reviews.dat Reviews
