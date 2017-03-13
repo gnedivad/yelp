@@ -35,10 +35,10 @@
         <Class IRI="#SteakhousesRestaurant"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#HasShellfishAllergy"/>
+        <Class IRI="#ModernEuropeanRestaurant"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ModernEuropeanRestaurant"/>
+        <DataProperty IRI="#HasShellfishAllergy"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HungarianRestaurant"/>
@@ -179,16 +179,16 @@
         <Class IRI="#RestaurantByPrice"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OvoVegetarian"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Review"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#username"/>
+        <Class IRI="#OvoVegetarian"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NewAmericanRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#username"/>
     </Declaration>
     <Declaration>
         <Class IRI="#BarbequeRestaurant"/>
@@ -209,10 +209,10 @@
         <Class IRI="#FoodCourtRestaurant"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#data"/>
+        <Class IRI="#LactoVegetarian"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LactoVegetarian"/>
+        <DataProperty IRI="#data"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Pescetarian"/>
@@ -260,13 +260,13 @@
         <DataProperty IRI="#RestaurantData"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HongKongStyleCafeRestaurant"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#PizzaRestaurant"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NepaleseRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HongKongStyleCafeRestaurant"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SupperClubsRestaurant"/>
@@ -317,10 +317,10 @@
         <Class IRI="#ChickenWingsRestaurant"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#address"/>
+        <Class IRI="#BrasseriesRestaurant"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BrasseriesRestaurant"/>
+        <DataProperty IRI="#address"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MeatForbidden"/>
@@ -600,8 +600,26 @@
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AfghanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Afghan</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AfricanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AfricanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">African</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AlcoholForbidden"/>
@@ -612,36 +630,117 @@
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ArabianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Arabian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ArgentineRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArgentineRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Argentine</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ArmenianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ArmenianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Armenian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AsianFusionRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AsianFusionRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AsianFusion</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AustralianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AustralianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Australian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AustrianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AustrianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Austrian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BangladeshiRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#BangladeshiRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bangladesh</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BarbequeRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#BarbequeRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Barbeque</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BasqueRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BasqueRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Basque</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BeefForbidden"/>
@@ -652,76 +751,248 @@
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#BelgianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Belgian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BrasseriesRestaurant"/>
         <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrasseriesRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Brasseries</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BrazilianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#BrazilianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Brazilian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BreakfastAndBrunchRestaurant"/>
         <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreakfastAndBrunchRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BreakfastAndBrunch</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BritishRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#BritishRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">British</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BuffetsRestaurant"/>
         <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuffetsRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Buffets</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BurgersRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#BurgersRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Burgers</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BurmeseRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BurmeseRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Burmese</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CafesRestaurant"/>
         <Class IRI="#RestaurantByServingStyle"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CafesRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cafes</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CafeteriaRestaurant"/>
         <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CafeteriaRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cafeteria</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CajunRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CajunRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cajun</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Creole</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CambodianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CambodianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cambodian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CaribbeanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CaribbeanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Caribbean</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CatalanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CatalanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Catalan</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CheesesteaksRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CheesesteaksRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cheesesteaks</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ChickenShopRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChickenShopRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ChickenShop</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ChickenWingsRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ChickenWingsRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ChickenWings</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ChineseRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ChineseRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Chinese</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ComfortFoodRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComfortFoodRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ComfortFood</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CreoleRestaurant"/>
@@ -732,24 +1003,78 @@
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CreperiesRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Creperies</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CubanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CubanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cuban</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CzechRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CzechRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Czech</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DelisRestaurant"/>
         <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DelisRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Delis</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DinersRestaurant"/>
         <Class IRI="#RestaurantByServingStyle"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DinersRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Diners</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DinnerTheaterRestaurant"/>
         <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DinnerTheaterRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DinnerTheater</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EggsForbidden"/>
@@ -760,20 +1085,65 @@
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#EthiopianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ethiopian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ExpensivePriceRestaurant"/>
         <Class IRI="#RestaurantByPrice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExpensivePriceRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#price"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Expensive</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FastFoodRestaurant"/>
         <Class IRI="#RestaurantByServingStyle"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FastFoodRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FastFood</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#FilipinoRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FilipinoRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Filipino</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#FishAndChipsRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FishAndChipsRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FishAndChips</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FishForbidden"/>
@@ -784,24 +1154,78 @@
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FondueRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fondue</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#FoodCourtRestaurant"/>
         <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodCourtRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FoodCourt</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FoodStandsRestaurant"/>
         <Class IRI="#RestaurantByServingStyle"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FoodStandsRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FoodStands</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#FrenchRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrenchRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">French</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GastropubsRestaurant"/>
         <Class IRI="#SpecialInterestRestaurant"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#GastropubsRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Gastropubs</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#GermanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GermanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">German</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GlutenFree"/>
@@ -812,12 +1236,39 @@
         <Class IRI="#SpecialInterestRestaurant"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#GlutenFreeRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GlutenFree</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#GreekRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#GreekRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Greek</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#GuamanianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuamanianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Guamanian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Halal"/>
@@ -828,6 +1279,15 @@
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HalalRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Halal</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HasForbiddenFoods"/>
         <Class IRI="#User"/>
     </SubClassOf>
@@ -836,68 +1296,223 @@
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HawaiianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hawaiian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HimalayanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HimalayanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Himalayan</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nepalese</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HonduranRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HonduranRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Honduran</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HongKongStyleCafeRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HongKongStyleCafeRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">HongKongStyleCafe</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HotDogsRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HotDogsRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">HotDogs</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HotPotRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotPotRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">HotPot</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HungarianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HungarianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hungarian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#IberianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IberianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Iberian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IndianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#IndianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#IndonesianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndonesianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indonesian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InexpensivePriceRestaurant"/>
         <Class IRI="#RestaurantByPrice"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#InexpensivePriceRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#price"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Inexpensive</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#IranianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IranianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Iranian</Literal>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Persian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IrishRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#IrishRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Irish</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ItalianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ItalianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Italian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#JapaneseRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#JapaneseRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Japanese</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#KebabRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#KebabRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Kebab</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#KoreanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KoreanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Korean</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Kosher"/>
@@ -908,6 +1523,15 @@
         <Class IRI="#SpecialInterestRestaurant"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#KosherRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Kosher</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#LactoVegetarian"/>
         <Class IRI="#Vegetarian"/>
     </SubClassOf>
@@ -916,16 +1540,52 @@
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#LaotianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Laotian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#LatinAmericanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LatinAmericanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LatinAmerican</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LiveFoodRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#LiveFoodRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LiveFood</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MalaysianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MalaysianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Malaysian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MeatForbidden"/>
@@ -936,28 +1596,91 @@
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MediterraneanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mediterranean</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MexicanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MexicanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mexican</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MiddleEasternRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MiddleEasternRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MiddleEastern</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ModeratePriceRestaurant"/>
         <Class IRI="#RestaurantByPrice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModeratePriceRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#price"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Moderate</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ModernEuropeanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ModernEuropeanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ModernEuropean</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MongolianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MongolianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mongolian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MoroccanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoroccanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Moroccan</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NepaleseRestaurant"/>
@@ -968,16 +1691,52 @@
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NewAmericanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NewAmerican</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NewMexicanCuisineRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewMexicanCuisineRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NewMexicanCuisine</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NicaraguanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NicaraguanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nicaraguan</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NoodlesRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoodlesRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Noodles</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OvoLactoVegetarian"/>
@@ -992,8 +1751,26 @@
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PakistaniRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pakistani</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PanAsianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PanAsianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PanAsian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PersianRestaurant"/>
@@ -1002,6 +1779,15 @@
     <SubClassOf>
         <Class IRI="#PeruvianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeruvianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Peruvian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pescetarian"/>
@@ -1020,12 +1806,39 @@
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PizzaRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pizza</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PolishRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PolishRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Polish</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PopUpRestaurant"/>
         <Class IRI="#RestaurantByServingStyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PopUpRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PopUp</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PorkForbidden"/>
@@ -1036,6 +1849,15 @@
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PortugueseRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Portuguese</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PoultryForbidden"/>
         <Class IRI="#HasForbiddenFoods"/>
     </SubClassOf>
@@ -1044,12 +1866,39 @@
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PoutineriesRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Poutineries</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PriceyPriceRestaurant"/>
         <Class IRI="#RestaurantByPrice"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PriceyPriceRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#price"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pricey</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RawFoodRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RawFoodRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">RawFood</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Restaurant"/>
@@ -1139,48 +1988,156 @@
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RussianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Russian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SaladRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SaladRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Salad</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SandwichesRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SandwichesRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sandwiches</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ScandinavianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScandinavianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Scandinavian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ScottishRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ScottishRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Scottish</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SeafoodRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeafoodRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Seafood</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SingaporeanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SingaporeanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Singaporean</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SlovakianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlovakianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Slovakian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SoulFoodRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SoulFoodRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SoulFood</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SoupRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoupRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Soup</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SouthernRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SouthernRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Southern</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SpanishRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpanishRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Spanish</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SpecialInterestRestaurant"/>
@@ -1191,48 +2148,156 @@
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SriLankanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SriLankan</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SteakhousesRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SteakhousesRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Steakhouses</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SupperClubsRestaurant"/>
         <Class IRI="#RestaurantByServingStyle"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SupperClubsRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SupperClubs</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SushiBarsRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SushiBarsRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SushiBars</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SyrianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SyrianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Syrian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TaiwaneseRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaiwaneseRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Taiwanese</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TapasRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#TapasRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tapas</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TexMexRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TexMexRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TexMex</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ThaiRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ThaiRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Thai</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TraditionalAmericanRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TraditionalAmericanRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TraditionalAmerican</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TurkishRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#TurkishRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Turkish</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#UkrainianRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UkrainianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ukrainian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#User"/>
@@ -1311,6 +2376,13 @@
     <SubClassOf>
         <Class IRI="#UserPreference"/>
         <DataSomeValuesFrom>
+            <DataProperty IRI="#CuisinePreference"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserPreference"/>
+        <DataSomeValuesFrom>
             <DataProperty IRI="#PricePreference"/>
             <DataOneOf>
                 <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Expensive</Literal>
@@ -1321,8 +2393,24 @@
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#UserPreference"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#TasteAversion"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#UzbekRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UzbekRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Uzbek</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Vegan"/>
@@ -1331,6 +2419,15 @@
     <SubClassOf>
         <Class IRI="#VeganRestaurant"/>
         <Class IRI="#SpecialInterestRestaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeganRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vegan</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Vegetarian"/>
@@ -1349,16 +2446,52 @@
         <Class IRI="#SpecialInterestRestaurant"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#VegetarianRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vegetarian</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#VietnameseRestaurant"/>
         <Class IRI="#RestaurantByCuisine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VietnameseRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vietnamese</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WafflesRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#WafflesRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Waffles</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#WrapsRestaurant"/>
         <Class IRI="#RestaurantByFoodType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WrapsRestaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#category"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Wraps</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#ExpensivePriceRestaurant"/>
