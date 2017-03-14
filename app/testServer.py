@@ -173,10 +173,11 @@ class search:
         distance = post_params['distance']
         minStars = post_params['minStars']
         numResults = post_params['numResults']
+        sortBy = post_params['sortBy']
         #print post_params
         t = sqlitedb.transaction()
         try:
-            search_result = sqlitedb.search(restaurantId, name, category, minPrice, maxPrice, city, lat, longi, distance, minStars, numResults)
+            search_result = sqlitedb.search(restaurantId, name, category, minPrice, maxPrice, city, lat, longi, distance, minStars, numResults,sortBy)
             #search_result = sqlitedb.search(None, None, None, None, None, None, None, None, None, '5')
             #search_result = sqlitedb.getRestaurantById('W9Bh_7mfuUrEAdQBJMVOvA')
             updateMessage = 'search successful'
