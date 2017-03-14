@@ -1,0 +1,87 @@
+4423, Breakfast & Brunch
+4382, Sandwiches
+4382, American (Traditional)
+4363, Italian
+4351, Burgers
+4331, Pizza
+4288, Seafood
+4243, Mexican
+4226, American (New)
+4187, Asian Fusion
+4162, Chinese
+4088, Cafes
+4040, Japanese
+4029, Sushi Bars
+3934, Steakhouses
+3898, Fast Food
+3889, Coffee & Tea
+3868, Barbeque
+3812, Salad
+3764, Vegetarian
+3761, Mediterranean
+3732, Desserts
+3690, Beer
+3681, Thai
+3675, Wine Bars
+3623, Bakeries
+3602, Specialty Food
+3550, Diners
+3424, Delis
+3284, Chicken Wings
+3054, Greek
+2994, Vegan
+2962, French
+2959, Buffets
+2930, Vietnamese
+2784, Soup
+2771, Comfort Food
+2612, Tapas/Small Plates
+2597, Korean
+2584, Middle Eastern
+2545, Tex-Mex
+2505, Ice Cream & Frozen Yogurt
+2442, Southern
+2435, Indian
+2404, Ethnic Food
+2325, Latin American
+2315, Hot Dogs
+2157, Tapas Bars
+2139, Juice Bars & Smoothies
+2070, Noodles
+1995, Cajun/Creole
+1821, Irish
+1738, Bagels
+1726, Ramen
+1724, Caribbean
+1688, Dim Sum
+1670, British
+1642, Hawaiian
+1610, Soul Food
+1482, Creperies
+1408, Spanish
+1273, German
+1264, Pakistani
+1248, Taiwanese
+1233, Canadian (New)
+1207, Halal
+1183, Fish & Chips
+788, Cantonese
+763, Filipino
+753, Malaysian
+714, Waffles
+711, Belgian
+706, Lebanese
+697, African
+664, Persian/Iranian
+638, Turkish
+627, Portuguese
+601, Fondue
+589, Szechuan
+578, Mongolian
+551, Peruvian
+550, Cuban
+542, Hot Pot
+528, Ethiopian
+510, Polish
+310, Tacos
+304, Venezuelan
