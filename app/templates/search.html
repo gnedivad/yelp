@@ -116,6 +116,8 @@
   {% endif %}
 </div>
 <div class="col-md-2">
+  <div style="padding-bottom: 10px;font-weight: bold;">Example Users
+  (Click name to populate with a sample user preference.)</div>
   <div id="david" style="padding-bottom: 10px">David</div>
   <div id="stephanie">Stephanie</div>
 </div>
@@ -125,15 +127,21 @@
   var stephanie = document.querySelector("#stephanie");
   david.addEventListener("click", function() {
     document.querySelector("select[name='maxPrice']").value = 1;
-    document.querySelector("input[name='city']").value = "Palo Alto";
-    document.querySelector("input[name='distance']").value = "5";
+    document.querySelector("input[name='city']").value = "Toronto";
+    document.querySelector("input[name='distance']").value = "1";
+    document.querySelector("input[name='lat']").value = "43.661054";
+    document.querySelector("input[name='long']").value = "-79.429089";
     document.querySelector("input[value='1']").checked = true;
+    document.querySelector("input[name='numResults']").value = "10"
   });
   stephanie.addEventListener("click", function() {
     document.querySelector("select[name='maxPrice']").value = 3;
-    document.querySelector("input[name='city']").value = "Palo Alto";
-    document.querySelector("input[name='distance']").value = "15";
+    document.querySelector("input[name='city']").value = "Toronto";
+    document.querySelector("input[name='distance']").value = "2";
+    document.querySelector("input[name='lat']").value = "43.6617093";
+    document.querySelector("input[name='long']").value = "-79.4274058";
     document.querySelector("input[value='3']").checked = true;
+    document.querySelector("input[name='numResults']").value = "20"
   });
 </script>
 

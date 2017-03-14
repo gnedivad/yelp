@@ -123,13 +123,14 @@ def search(restaurantId, name, category, minPrice, maxPrice, city, lat, longi, d
         # a2+b2 <= (distance/69)^2 = distance*distance/(69*69)
         queryStr += '(((abs(r.Latitude - $lat)*abs(r.Latitude - $lat))+(abs(r.Longitude - $longi)*abs(r.Longitude - $longi)))*69*69) <= $distanceSq'
         conditionCount += 1
-        queryStr += ' order by dist'
+        #queryStr += ' order by dist'
         if numResults:
             queryStr += ' limit $numResults'
         else:
             queryStr += ' limit 50'
+        nestedQueryStr = 'select * from ('+queryStr+') order by dist'
         #print queryStr
-        searchResult = query(queryStr, {'restaurantId': restaurantId, 'category': category, 'name': name,
+        searchResult = query(nestedQueryStr, {'restaurantId': restaurantId, 'category': category, 'name': name,
                                         'minPrice': minPrice, 'maxPrice':
                                         maxPrice, 'city': city, 'minStars':
                                         minStarsInt, 'lat': float(lat), 'longi': float(longi),
