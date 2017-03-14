@@ -40,7 +40,7 @@ def getRestaurantById(restaurantId):
 # check if any param is null to not add to the query
 # calculate distance limit via long/lat conversion ---> post query
 # filtering (may have large result set to filter through)
-def search(restaurantId, name, category, minPrice, maxPrice, city, lat, longi, distance, minStars, numResults):
+def search(restaurantId, name, category, minPrice, maxPrice, city, lat, longi, distance, minStars, numResults, sortBy):
     queryStr = 'select distinct r.RestaurantId, r.Name, r.Price, r.City, r.Rating from Restaurants as r, Categories as c'
 
     if lat and longi and distance:
@@ -128,7 +128,13 @@ def search(restaurantId, name, category, minPrice, maxPrice, city, lat, longi, d
             queryStr += ' limit $numResults'
         else:
             queryStr += ' limit 50'
-        nestedQueryStr = 'select * from ('+queryStr+') order by dist'
+        if sortBy == '1':
+            nestedQueryStr = 'select * from ('+queryStr+') order by dist'
+        elif sortBy == '2':
+            nestedQueryStr = 'select * from ('+queryStr+') order by Price desc'
+        else:
+            nestedQueryStr = 'select * from ('+queryStr+') order by Rating desc'
+
         #print queryStr
         searchResult = query(nestedQueryStr, {'restaurantId': restaurantId, 'category': category, 'name': name,
                                         'minPrice': minPrice, 'maxPrice':

@@ -79,6 +79,16 @@
       <label for="numResults">Max # Results</label>
       <input type="text" name="numResults" class="form-control" id="numResults" />
     </div>
+    <div class="form-group">
+      <label for="sortBy">Sort by</label>
+      <select name="sortBy">
+        <option value = "1">Distance</option>
+        <option value = "2">Price</option>
+        <option value = "3">Stars</option>
+      </select>
+      <!--<input type="text" name="maxPrice" class="form-control" id="maxPrice" />-->
+    </div>
+
     <div><input type="submit" value="Start Searching!" class="btn btn-primary" /></div>
   </form>
   <h3>Result</h3>
@@ -118,30 +128,47 @@
 <div class="col-md-2">
   <div style="padding-bottom: 10px;font-weight: bold;">Example Users
   (Click name to populate with a sample user preference.)</div>
-  <div id="david" style="padding-bottom: 10px">David</div>
-  <div id="stephanie">Stephanie</div>
+  <div id="alice" style="padding-bottom: 10px">Alice (I like close, cheap things)</div>
+  <div id="bob">Bob (I like close, good things)</div>
+  <div id="chris">Chris (I like good, expensive things)</div>
 </div>
 
 <script type="text/javascript">
-  var david = document.querySelector("#david");
-  var stephanie = document.querySelector("#stephanie");
-  david.addEventListener("click", function() {
+  var alice = document.querySelector("#alice");
+  var bob = document.querySelector("#bob");
+  var chris = document.querySelector("#chris");
+  alice.addEventListener("click", function() {
+    console.log("here");
     document.querySelector("select[name='maxPrice']").value = 1;
     document.querySelector("input[name='city']").value = "Toronto";
     document.querySelector("input[name='distance']").value = "1";
     document.querySelector("input[name='lat']").value = "43.661054";
     document.querySelector("input[name='long']").value = "-79.429089";
     document.querySelector("input[value='1']").checked = true;
-    document.querySelector("input[name='numResults']").value = "10"
+    document.querySelector("input[name='numResults']").value = "10";
+    document.querySelector("select[name='sortBy']").value = 1;
   });
-  stephanie.addEventListener("click", function() {
+  bob.addEventListener("click", function() {
     document.querySelector("select[name='maxPrice']").value = 3;
     document.querySelector("input[name='city']").value = "Toronto";
     document.querySelector("input[name='distance']").value = "2";
     document.querySelector("input[name='lat']").value = "43.6617093";
     document.querySelector("input[name='long']").value = "-79.4274058";
+    document.querySelector("input[value='4']").checked = true;
+    document.querySelector("input[name='numResults']").value = "20";
+    document.querySelector("select[name='sortBy']").value = 2;
+  });
+  chris.addEventListener("click", function() {
+    document.querySelector("select[name='minPrice']").value = 3;
+    document.querySelector("select[name='maxPrice']").value = 4;
+    document.querySelector("input[name='city']").value = "Toronto";
+    document.querySelector("input[name='distance']").value = "10";
+    document.querySelector("input[name='lat']").value = "43.6617093";
+    document.querySelector("input[name='long']").value = "-79.4274058";
     document.querySelector("input[value='3']").checked = true;
-    document.querySelector("input[name='numResults']").value = "20"
+    document.querySelector("input[name='numResults']").value = "20";
+    document.querySelector("select[name='sortBy']").value = 3;
+
   });
 </script>
 
