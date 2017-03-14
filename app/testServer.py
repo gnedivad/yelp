@@ -8,6 +8,13 @@ import sqlitedb
 from jinja2 import Environment, FileSystemLoader
 import json
 
+from pgmpy.models import BayesianModel
+from pgmpy.inference import VariableElimination
+from pgmpy.readwrite import XMLBIFReader
+MODEL_FILE = 'bayes453.bif.xml'
+model = XMLBIFReader(MODEL_FILE).get_model()
+infer = VariableElimination(model)
+
 ###########################################################################################
 ##########################DO NOT CHANGE ANYTHING ABOVE THIS LINE!##########################
 ###########################################################################################
@@ -52,57 +59,57 @@ class bayes:
     def GET(self):
         #return json.dumps({'status': 2})
         return render_template('bayes.html')
-    def POST(self):        
-        prob_result = {'Dummy Result': 0.12345}
-        return render_template('bayes.html', prob_result = prob_result)
+    def POST(self):
         #return json.dumps({'status': 3})
         #return render_template('bayes.html')
-        
+
         params = web.input()
-        Sandwiches = post_params['Sandwiches']
-        Italian = post_params['Italian']
-        Burgers = post_params['Burgers']
-        Pizza = post_param['Pizza']
-        Seafood = post_param['Seafood']
-        Mexican = post_param['Mexican']
-        Chinese = post_params['Chinese']
-        
-        probMap == {}
+        Sandwiches = params['Sandwiches']
+        Italian = params['Italian']
+        Burgers = params['Burgers']
+        Pizza = params['Pizza']
+        Seafood = params['Seafood']
+        Mexican = params['Mexican']
+        Chinese = params['Chinese']
+
+        probMap = {}
 
         if Sandwiches == "true":
-            probMap['Sandwiches'] = True
+            probMap['Sandwiches'] =1
         elif Sandwiches == "false":
-            probMap['Sanwiches'] = False
+            probMap['Sanwiches'] = 0#False
         if Italian == "true":
-            probMap['Italian'] = True
+            probMap['Italian'] = 1#True
         elif Sandwiches == "false":
-            probMap['Italian'] = False
+            probMap['Italian'] = 0#False
         if Burgers== "true":
-            probMap['Burgers'] = True
+            probMap['Burgers'] = 1#True
         elif Burgers == "false":
-            probMap['Burgers'] = False
+            probMap['Burgers'] = 0#False
         if Pizza == "true":
-            probMap['Pizza'] = True
+            probMap['Pizza'] = 1#True
         elif Pizza == "false":
-            probMap['Pizza'] = False
+            probMap['Pizza'] = 0#False
         if Seafood == "true":
-            probMap['Seafood'] = True
+            probMap['Seafood'] = 1#True
         elif Seafood == "false":
-            probMap['Seafood'] = False
+            probMap['Seafood'] = 0#False
         if Mexican == "true":
-            probMap['Mexican'] = True
+            probMap['Mexican'] = 1#True
         elif Mexican == "false":
-            probMap['Mexican'] = False
+            probMap['Mexican'] = 0#False
         if Chinese == "true":
-            probMap['Chinese'] = True
+            probMap['Chinese'] = 1#True
         elif Chinese == "false":
-            probMap['Chinese'] = False
-        
+            probMap['Chinese'] = 0#False
+
         # execute the bayes function with the probMap
-        
-        prob_result = {'Dummy Result': '0.12345'}
+        prob_result = {}
+        for node in model.nodes():
+            if node not in probMap:
+                prob_result[node] = infer.query([node],evidence=probMap)[node].values[1]
         return render_template('bayes.html', prob_result = prob_result)
-    
+
 class view:
     def GET(self):
         #print itemID
@@ -137,8 +144,8 @@ class view:
                 return render_template('view.html', result = result,categories = categories_string)
             else:
                 return render_template('view.html', result = result,categories = categories_string,reviews=reviewsResult)
-                
-            
+
+
 class search:
     def GET(self):
         categories = sqlitedb.getAllCategories()
