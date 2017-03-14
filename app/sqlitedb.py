@@ -42,6 +42,9 @@ def getRestaurantById(restaurantId):
 # filtering (may have large result set to filter through)
 def search(restaurantId, name, category, minPrice, maxPrice, city, lat, longi, distance, minStars, numResults):
     queryStr = 'select distinct r.RestaurantId, r.Name, r.Price, r.City, r.Rating from Restaurants as r, Categories as c'
+
+    if lat and longi and distance:
+        queryStr = 'select distinct (((abs(r.Latitude - $lat)*abs(r.Latitude - $lat))+(abs(r.Longitude - $longi)*abs(r.Longitude - $longi)))*69*69) as dist, r.RestaurantId, r.Name, r.Price, r.City, r.Rating from Restaurants as r, Categories as c'
     conditionCount = 0
     
     if minStars:
@@ -120,6 +123,7 @@ def search(restaurantId, name, category, minPrice, maxPrice, city, lat, longi, d
         # a2+b2 <= (distance/69)^2 = distance*distance/(69*69)
         queryStr += '(((abs(r.Latitude - $lat)*abs(r.Latitude - $lat))+(abs(r.Longitude - $longi)*abs(r.Longitude - $longi)))*69*69) <= $distanceSq'
         conditionCount += 1
+        queryStr += ' order by dist'
         if numResults:
             queryStr += ' limit $numResults'
         else:
