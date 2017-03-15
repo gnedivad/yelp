@@ -40,7 +40,7 @@ def render_template(template_name, **context):
 
 #####################END HELPER METHODS#####################
 
-urls = ('/search', 'search', '/test', 'test', '/view', 'view')
+urls = ('/bayes', 'bayes', '/search', 'search', '/test', 'test', '/view', 'view')
 
 class test:
     def GET(self):
@@ -48,6 +48,61 @@ class test:
     def POST(self):
         return json.dumps({'status': 1})
 
+class bayes:
+    def GET(self):
+        #return json.dumps({'status': 2})
+        return render_template('bayes.html')
+    def POST(self):        
+        prob_result = {'Dummy Result': 0.12345}
+        return render_template('bayes.html', prob_result = prob_result)
+        #return json.dumps({'status': 3})
+        #return render_template('bayes.html')
+        
+        params = web.input()
+        Sandwiches = post_params['Sandwiches']
+        Italian = post_params['Italian']
+        Burgers = post_params['Burgers']
+        Pizza = post_param['Pizza']
+        Seafood = post_param['Seafood']
+        Mexican = post_param['Mexican']
+        Chinese = post_params['Chinese']
+        
+        probMap == {}
+
+        if Sandwiches == "true":
+            probMap['Sandwiches'] = True
+        elif Sandwiches == "false":
+            probMap['Sanwiches'] = False
+        if Italian == "true":
+            probMap['Italian'] = True
+        elif Sandwiches == "false":
+            probMap['Italian'] = False
+        if Burgers== "true":
+            probMap['Burgers'] = True
+        elif Burgers == "false":
+            probMap['Burgers'] = False
+        if Pizza == "true":
+            probMap['Pizza'] = True
+        elif Pizza == "false":
+            probMap['Pizza'] = False
+        if Seafood == "true":
+            probMap['Seafood'] = True
+        elif Seafood == "false":
+            probMap['Seafood'] = False
+        if Mexican == "true":
+            probMap['Mexican'] = True
+        elif Mexican == "false":
+            probMap['Mexican'] = False
+        if Chinese == "true":
+            probMap['Chinese'] = True
+        elif Chinese == "false":
+            probMap['Chinese'] = False
+        
+        # execute the bayes function with the probMap
+        
+        prob_result = {'Dummy Result': '0.12345'}
+        return render_template('bayes.html', prob_result = prob_result)
+    
 class view:
     def GET(self):
         #print itemID
@@ -122,7 +177,7 @@ class search:
         #print post_params
         t = sqlitedb.transaction()
         try:
-            search_result = sqlitedb.search(restaurantId, name, category, minPrice, maxPrice, city, lat, longi, distance, minStars, numResults, sortBy)
+            search_result = sqlitedb.search(restaurantId, name, category, minPrice, maxPrice, city, lat, longi, distance, minStars, numResults,sortBy)
             #search_result = sqlitedb.search(None, None, None, None, None, None, None, None, None, '5')
             #search_result = sqlitedb.getRestaurantById('W9Bh_7mfuUrEAdQBJMVOvA')
             updateMessage = 'search successful'

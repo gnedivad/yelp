@@ -103,7 +103,13 @@
   </tr>
   {% for result in search_result %}
   <tr>
-    <td><a href="./view?restaurantId={{ result['RestaurantID'] }}">{{ result.Name }}</a></td>
+    <td>
+      {% if result['RestaurantID'] %}
+      <a href="./view?restaurantId={{ result['RestaurantID'] }}">{{ result.Name }}</a>
+      {% else %}
+      <a href="./view?restaurantId={{ result['RestaurantId'] }}">{{ result.Name }}</a>
+      {% endif %}
+    </td>
     <td>{% if result.Price == 1 %}
       $
       {% elif result.Price == 2 %}

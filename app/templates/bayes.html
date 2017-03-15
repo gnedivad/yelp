@@ -1,0 +1,90 @@
+{% extends "app_base.html" %}
+{% block content %}
+<h3> Bayesian Networks </h3> 
+
+<div class="col-md-6">
+  <form method="POST" action="bayes" role="form" style="max-width:400px; width:100%">
+    {% if message is defined %}
+    <div class="alert alert-warning" role="alert">{{ message }}</div>
+    {% endif %}
+    <!--<div class="alert alert-info">Anything not input will not be taken into account</div>-->
+    <div class="form-group">
+      <label for="Sandwiches">Sandwiches</label>
+      <select name="Sandwiches">
+        <option value = "none" selected="selected">-</option>
+        <option value = "true">I like this.</option>
+        <option value = "false">I don't like this.</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="Italian">Italian</label>
+      <select name="Italian">
+        <option value = "none" selected="selected">-</option>
+        <option value = "true">I like this.</option>
+        <option value = "false">I don't like this.</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="Burgers">Burgers</label>
+      <select name="Burgers">
+        <option value = "none" selected="selected">-</option>
+        <option value = "true">I like this.</option>
+        <option value = "false">I don't like this.</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="Pizza">Pizza</label>
+      <select name="Pizza">
+        <option value = "none" selected="selected">-</option>
+        <option value = "true">I like this.</option>
+        <option value = "false">I don't like this.</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="Seafood">Seafood</label>
+      <select name="Seafood">
+        <option value = "none" selected="selected">-</option>
+        <option value = "true">I like this.</option>
+        <option value = "false">I don't like this.</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="Mexican">Mexican</label>
+      <select name="Mexican">
+        <option value = "none" selected="selected">-</option>
+        <option value = "true">I like this.</option>
+        <option value = "false">I don't like this.</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="Chinese">Chinese</label>
+      <select name="Chinese">
+        <option value = "none" selected="selected">-</option>
+        <option value = "true">I like this.</option>
+        <option value = "false">I don't like this.</option>
+      </select>
+    </div>
+    
+    <div><input type="submit" value="Generate Probabilities" class="btn btn-primary" /></div>
+  </form>
+  <h3>Result</h3>
+
+  {% if prob_result %}
+  <table class="table table-striped">
+  <tr>
+    <td>Category</td>
+    <td>Probability</td>
+  </tr>
+  {% for result in prob_result %}
+  <tr>
+    <td>{{ result }}</td>
+    <td>{{ prob_result[result] }}</td>
+  </tr>
+  {% endfor %}
+  </table>
+  {% else %}
+  <ul><div>No results</div></ul>
+  {% endif %}
+</div>
+
+{% endblock %}

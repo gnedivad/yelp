@@ -128,13 +128,12 @@ def search(restaurantId, name, category, minPrice, maxPrice, city, lat, longi, d
             queryStr += ' limit $numResults'
         else:
             queryStr += ' limit 50'
-        if sortBy == '1':
+        if sortBy == "1":
             nestedQueryStr = 'select * from ('+queryStr+') order by dist'
-        elif sortBy == '2':
+        elif sortBy == "2":
             nestedQueryStr = 'select * from ('+queryStr+') order by Price desc'
         else:
-            nestedQueryStr = 'select * from ('+queryStr+') order by Rating desc'
-
+            nestedQueryStr = 'select * from ('+queryStr+') order by Rating desc'   
         #print queryStr
         searchResult = query(nestedQueryStr, {'restaurantId': restaurantId, 'category': category, 'name': name,
                                         'minPrice': minPrice, 'maxPrice':
@@ -143,6 +142,11 @@ def search(restaurantId, name, category, minPrice, maxPrice, city, lat, longi, d
                                         'distanceSq': distanceSq, 'numResults': numResults})
         return searchResult
 
+    if sortBy == "2":
+        nestedQueryStr = ' order by Price desc'
+    else:
+        nestedQueryStr = ' order by Rating desc'
+        
     if numResults:
         queryStr += ' limit $numResults'
     else:

@@ -18,7 +18,7 @@
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Sushi Bars</NAME>
+    <NAME>SushiBars</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (1152, 270)</PROPERTY>
@@ -39,7 +39,7 @@
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Coffee Tea</NAME>
+    <NAME>CoffeeTea</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (576, 180)</PROPERTY>
@@ -67,14 +67,14 @@
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Ethnic Food</NAME>
+    <NAME>EthnicFood</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (384, 0)</PROPERTY>
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Specialty Food</NAME>
+    <NAME>SpecialtyFood</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (448, 90)</PROPERTY>
@@ -89,7 +89,7 @@
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Chicken Wings</NAME>
+    <NAME>ChickenWings</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (896, 180)</PROPERTY>
@@ -103,7 +103,7 @@
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Tapas/Small Plates</NAME>
+    <NAME>TapasSmallPlates</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (0, 90)</PROPERTY>
@@ -117,14 +117,14 @@
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Middle Eastern</NAME>
+    <NAME>MiddleEastern</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (128, 180)</PROPERTY>
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>American (New)</NAME>
+    <NAME>AmericanNew</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (832, 180)</PROPERTY>
@@ -159,7 +159,7 @@
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Fast Food</NAME>
+    <NAME>FastFood</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (960, 90)</PROPERTY>
@@ -194,7 +194,7 @@
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Wine Bars</NAME>
+    <NAME>WineBars</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (832, 90)</PROPERTY>
@@ -215,7 +215,7 @@
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Comfort Food</NAME>
+    <NAME>ComfortFood</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (256, 90)</PROPERTY>
@@ -236,7 +236,7 @@
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Asian Fusion</NAME>
+    <NAME>AsianFusion</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (1280, 450)</PROPERTY>
@@ -278,14 +278,14 @@
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Breakfast Brunch</NAME>
+    <NAME>BreakfastBrunch</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (896, 90)</PROPERTY>
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Tapas Bars</NAME>
+    <NAME>TapasBars</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (0, 0)</PROPERTY>
@@ -299,7 +299,7 @@
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>American (Traditional)</NAME>
+    <NAME>AmericanTraditional</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (768, 270)</PROPERTY>
@@ -313,14 +313,14 @@
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Ice Cream Frozen Yogurt</NAME>
+    <NAME>IceCreamFrozenYogurt</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (768, 90)</PROPERTY>
   </VARIABLE>
 
   <VARIABLE TYPE="nature">
-    <NAME>Hot Dogs</NAME>
+    <NAME>HotDogs</NAME>
     <OUTCOME>False</OUTCOME>
     <OUTCOME>True</OUTCOME>
     <PROPERTY>position = (384, 90)</PROPERTY>
@@ -333,8 +333,8 @@
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Sushi Bars</FOR>
-    <GIVEN>American (New)</GIVEN>
+    <FOR>SushiBars</FOR>
+    <GIVEN>AmericanNew</GIVEN>
     <TABLE>0.633721941883 0.366278058117 0.406809338521 0.593190661479 </TABLE>
   </DEFINITION>
 
@@ -349,7 +349,7 @@
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Coffee Tea</FOR>
+    <FOR>CoffeeTea</FOR>
     <GIVEN>Bakeries</GIVEN>
     <GIVEN>Cafes</GIVEN>
     <TABLE>0.792810204871 0.207189795129 0.467244701349 0.532755298651 0.565943238731 0.434056761269 0.244129158513 0.755870841487 </TABLE>
@@ -373,27 +373,27 @@
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Ethnic Food</FOR>
+    <FOR>EthnicFood</FOR>
     <TABLE>0.555248618785 0.444751381215 </TABLE>
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Specialty Food</FOR>
-    <GIVEN>Ethnic Food</GIVEN>
+    <FOR>SpecialtyFood</FOR>
+    <GIVEN>EthnicFood</GIVEN>
     <TABLE>0.880952380952 0.119047619048 0.125554569654 0.874445430346 </TABLE>
   </DEFINITION>
 
   <DEFINITION>
     <FOR>Burgers</FOR>
-    <GIVEN>American (New)</GIVEN>
-    <GIVEN>American (Traditional)</GIVEN>
-    <GIVEN>Fast Food</GIVEN>
+    <GIVEN>AmericanNew</GIVEN>
+    <GIVEN>AmericanTraditional</GIVEN>
+    <GIVEN>FastFood</GIVEN>
     <TABLE>0.834194457492 0.165805542508 0.627272727273 0.372727272727 0.613193403298 0.386806596702 0.37917222964 0.62082777036 0.668547249647 0.331452750353 0.492283950617 0.507716049383 0.405154639175 0.594845360825 0.191402251791 0.808597748209 </TABLE>
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Chicken Wings</FOR>
-    <GIVEN>Fast Food</GIVEN>
+    <FOR>ChickenWings</FOR>
+    <GIVEN>FastFood</GIVEN>
     <TABLE>0.637479806139 0.362520193861 0.399638336347 0.600361663653 </TABLE>
   </DEFINITION>
 
@@ -404,28 +404,28 @@
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Tapas/Small Plates</FOR>
-    <GIVEN>Tapas Bars</GIVEN>
+    <FOR>TapasSmallPlates</FOR>
+    <GIVEN>TapasBars</GIVEN>
     <TABLE>0.782918149466 0.217081850534 0.32380952381 0.67619047619 </TABLE>
   </DEFINITION>
 
   <DEFINITION>
     <FOR>Steakhouses</FOR>
-    <GIVEN>Wine Bars</GIVEN>
+    <GIVEN>WineBars</GIVEN>
     <TABLE>0.638367142499 0.361632857501 0.379594075699 0.620405924301 </TABLE>
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Middle Eastern</FOR>
+    <FOR>MiddleEastern</FOR>
     <GIVEN>Greek</GIVEN>
     <GIVEN>Mediterranean</GIVEN>
     <TABLE>0.801126760563 0.198873239437 0.410447761194 0.589552238806 0.668304668305 0.331695331695 0.24182444062 0.75817555938 </TABLE>
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>American (New)</FOR>
-    <GIVEN>Breakfast Brunch</GIVEN>
-    <GIVEN>Wine Bars</GIVEN>
+    <FOR>AmericanNew</FOR>
+    <GIVEN>BreakfastBrunch</GIVEN>
+    <GIVEN>WineBars</GIVEN>
     <TABLE>0.772080714522 0.227919285478 0.567015995587 0.432984004413 0.460778617083 0.539221382917 0.233226837061 0.766773162939 </TABLE>
   </DEFINITION>
 
@@ -442,7 +442,7 @@
 
   <DEFINITION>
     <FOR>Japanese</FOR>
-    <GIVEN>Sushi Bars</GIVEN>
+    <GIVEN>SushiBars</GIVEN>
     <TABLE>0.813026685393 0.186973314607 0.210860087198 0.789139912802 </TABLE>
   </DEFINITION>
 
@@ -453,7 +453,7 @@
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Fast Food</FOR>
+    <FOR>FastFood</FOR>
     <GIVEN>Mexican</GIVEN>
     <TABLE>0.622110552764 0.377889447236 0.363254477117 0.636745522883 </TABLE>
   </DEFINITION>
@@ -471,9 +471,9 @@
 
   <DEFINITION>
     <FOR>Delis</FOR>
-    <GIVEN>Comfort Food</GIVEN>
+    <GIVEN>ComfortFood</GIVEN>
     <GIVEN>Sandwiches</GIVEN>
-    <GIVEN>Specialty Food</GIVEN>
+    <GIVEN>SpecialtyFood</GIVEN>
     <TABLE>0.794838709677 0.205161290323 0.658362989324 0.341637010676 0.485815602837 0.514184397163 0.349514563107 0.650485436893 0.687747035573 0.312252964427 0.55612244898 0.44387755102 0.414893617021 0.585106382979 0.22454308094 0.77545691906 </TABLE>
   </DEFINITION>
 
@@ -484,7 +484,7 @@
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Wine Bars</FOR>
+    <FOR>WineBars</FOR>
     <GIVEN>Beer</GIVEN>
     <TABLE>0.644649257552 0.355350742448 0.363548698168 0.636451301832 </TABLE>
   </DEFINITION>
@@ -501,14 +501,14 @@
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Comfort Food</FOR>
+    <FOR>ComfortFood</FOR>
     <TABLE>0.59640184684 0.40359815316 </TABLE>
   </DEFINITION>
 
   <DEFINITION>
     <FOR>Desserts</FOR>
     <GIVEN>Bakeries</GIVEN>
-    <GIVEN>Ice Cream Frozen Yogurt</GIVEN>
+    <GIVEN>IceCreamFrozenYogurt</GIVEN>
     <TABLE>0.765550239234 0.234449760766 0.475894245723 0.524105754277 0.53986013986 0.46013986014 0.299101412067 0.700898587933 </TABLE>
   </DEFINITION>
 
@@ -518,7 +518,7 @@
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Asian Fusion</FOR>
+    <FOR>AsianFusion</FOR>
     <GIVEN>Chinese</GIVEN>
     <GIVEN>Japanese</GIVEN>
     <GIVEN>Korean</GIVEN>
@@ -556,13 +556,13 @@
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Breakfast Brunch</FOR>
+    <FOR>BreakfastBrunch</FOR>
     <GIVEN>Diners</GIVEN>
     <TABLE>0.685051958433 0.314948041567 0.365853658537 0.634146341463 </TABLE>
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Tapas Bars</FOR>
+    <FOR>TapasBars</FOR>
     <TABLE>0.566945606695 0.433054393305 </TABLE>
   </DEFINITION>
 
@@ -572,9 +572,9 @@
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>American (Traditional)</FOR>
-    <GIVEN>American (New)</GIVEN>
-    <GIVEN>Breakfast Brunch</GIVEN>
+    <FOR>AmericanTraditional</FOR>
+    <GIVEN>AmericanNew</GIVEN>
+    <GIVEN>BreakfastBrunch</GIVEN>
     <GIVEN>Steakhouses</GIVEN>
     <TABLE>0.843465045593 0.156534954407 0.668825910931 0.331174089069 0.64796479648 0.35203520352 0.402631578947 0.597368421053 0.597897503285 0.402102496715 0.421221864952 0.578778135048 0.350198412698 0.649801587302 0.153065929 0.846934071 </TABLE>
   </DEFINITION>
@@ -586,13 +586,13 @@
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Ice Cream Frozen Yogurt</FOR>
+    <FOR>IceCreamFrozenYogurt</FOR>
     <TABLE>0.543449575872 0.456550424128 </TABLE>
   </DEFINITION>
 
   <DEFINITION>
-    <FOR>Hot Dogs</FOR>
-    <GIVEN>Ethnic Food</GIVEN>
+    <FOR>HotDogs</FOR>
+    <GIVEN>EthnicFood</GIVEN>
     <TABLE>0.666370106762 0.333629893238 0.476300578035 0.523699421965 </TABLE>
   </DEFINITION>
 
