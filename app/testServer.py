@@ -14,7 +14,9 @@ from pgmpy.readwrite import XMLBIFReader
 MODEL_FILE = 'bayes453.bif.xml'
 model = XMLBIFReader(MODEL_FILE).get_model()
 infer = VariableElimination(model)
-
+baseline_result = {}
+for node in model.nodes():
+        baseline_result[node] = infer.query([node])[node].values[1]
 ###########################################################################################
 ##########################DO NOT CHANGE ANYTHING ABOVE THIS LINE!##########################
 ###########################################################################################
@@ -105,9 +107,14 @@ class bayes:
 
         # execute the bayes function with the probMap
         prob_result = {}
-        for node in model.nodes():
-            if node not in probMap:
-                prob_result[node] = infer.query([node],evidence=probMap)[node].values[1]
+        if len(probMap) > 0:
+            for node in model.nodes():
+                if node not in probMap:
+                    query_res = infer.query([node],evidence=probMap)[node].values[1]
+                    if abs(query_res - baseline_result[node]) > 0.025:
+                        prob_result[node] = query_res- baseline_result[node]
+        else:
+            prob_result = baseline_result
         return render_template('bayes.html', prob_result = prob_result)
 
 class view:
